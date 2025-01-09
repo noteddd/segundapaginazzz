@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Chamadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0033cc;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #0044ff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: grid;
+            grid-template-rows: auto 1fr;
+            gap: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #002b80;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .grid .column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #003399;
+        }
+
+        .grid .column .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .grid .column .content {
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .highlight {
+            background-color: #001f66;
+            padding: 70px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .highlight div {
+            margin: 5px 0;
+        }
+
+        .highlight .large-text {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #002b80;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .footer div {
+            margin: 5px 0;
+        }
+
+        .footer .large-text {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .side-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HISTÓRICO DE CHAMADAS</h1>
+        </div>
+        <div class="content-wrapper">
+            <div class="grid">
+                <div class="column">
+                    <div class="title">TIPO</div>
+                    <div class="content">NORMAL</div>
+                    <div class="content">NORMAL</div>
+                    <div class="content">PREF.</div>
+                    <div class="content">NORMAL</div>
+                    <div class="content">NORMAL</div>
+                    <div class="content">PREF.</div>
+                </div>
+                <div class="column">
+                    <div class="title">SENHA</div>
+                    <div class="content">00</div>
+                    <div class="content">00</div>
+                    <div class="content">00</div>
+                    <div class="content">00</div>
+                    <div class="content">00</div>
+                    <div class="content">00</div>
+                </div>
+                <div class="column">
+                    <div class="title">GUICHÊ</div>
+                    <div class="content">A0</div>
+                    <div class="content">A0</div>
+                    <div class="content">A0</div>
+                    <div class="content">A0</div>
+                    <div class="content">A0</div>
+                    <div class="content">A0</div>
+                </div>
+            </div>
+
+            <div class="side-section">
+                <div class="highlight">
+                    <div>GUICHÊ</div>
+                    <div class="large-text">00</div>
+                    <div>(NORMAL OU PRIORIDADE)</div>
+                </div>
+
+                <div class="footer">
+                    <div>SENHA</div>
+                    <div class="large-text">NOME</div>
+                    <div>A0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
