@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0033FF;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            padding: 50px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .info-section div {
+            font-size: 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .buttons-section {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .buttons-section button {
+            width: 260px;
+            height: 260px;
+            font-size: 26px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background-color: #0033FF;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buttons-section button:hover {
+            background-color: #001A66;
+        }
+
+        .last-calls-section {
+            background-color: #0033FF;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            padding: 25px;
+            width: 40%;
+        }
+
+
+        .last-calls-section h3 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .last-calls-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .last-calls-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+        }
+
+        .last-calls-column div {
+            background-color: #0033FF;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 700px;
+            margin-top: 40px;
+            gap: 50px;
+        }
+
+        .action-buttons button {
+            padding: 25px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .conclude {
+            width: 25%;
+            background-color: #0033FF;
+            color: #fff;
+        }
+
+        .conclude:hover {
+            background-color: #001A66;
+        }
+
+        .finalize {
+            width: 50%;
+            background-color: #FFD700;
+            color: #0022A8;
+        }
+
+        .finalize:hover {
+            background-color: #FFB800;
+        }
+
+        .reports {
+            width: 25%;
+            background-color: #0033FF;
+            color: #fff;
+        }
+
+        .reports:hover {
+            background-color: #001A66;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info-section">
+            <div>ATN. GERAL</div>
+            <div>CAIXA</div>
+            <div>PROUNI/FIES</div>
+            <div>NEGOCIAÇÃO</div>
+            <div>NOVATOS</div>
+            <div>EAD</div>
+        </div>
+
+        <div class="main-content">
+            <div class="buttons-section">
+                <button>CHAMAR</button>
+                <button>
+                    CHAMAR<br>NOVAMENTE
+                </button>
+            </div>
+
+            <div class="last-calls-section">
+                <h3>ÚLTIMAS CHAMADAS</h3>
+                <div class="last-calls-content">
+                    <div class="last-calls-column">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="last-calls-column">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="conclude">CONCLUIR ATENDIMENTO</button>
+            <button class="finalize">FINALIZAR</button>
+            <button class="reports">RELATÓRIOS</button>
+        </div>
+    </div>
+</body>
+
+</html>
